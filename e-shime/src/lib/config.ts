@@ -1,3 +1,4 @@
-export const API_BASE = process.env.NEXT_PUBLIC_API_BASE
+/// <reference types="vite/client" />
 
-export const SOCKET_BASE = process.env.NEXT_PUBLIC_SOCKET_BASE
+export const API_BASE = import.meta.env.VITE_API_BASE || "http://localhost:5000";
+export const SOCKET_BASE = import.meta.env.VITE_SOCKET_BASE || API_BASE;
