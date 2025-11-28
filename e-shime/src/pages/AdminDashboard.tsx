@@ -51,7 +51,7 @@ const therapistData = [
 
 export function AdminDashboard({ darkMode }: AdminDashboardProps) {
   return (
-    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-[#F5F5DC]'} transition-colors duration-300 pb-20`}>
+    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-purple-50'} transition-colors duration-300 pb-20`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <motion.div

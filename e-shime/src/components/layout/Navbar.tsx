@@ -32,16 +32,14 @@ export function Navbar({ darkMode, toggleDarkMode,  isAdmin }: NavbarProps) {
     <nav className={`sticky top-0 z-50 ${darkMode ? 'bg-gray-900' : 'bg-white'} border-b ${darkMode ? 'border-gray-700' : 'border-gray-200'} transition-colors duration-300`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <Heart className={`h-8 w-8 ${darkMode ? 'text-beige' : 'text-black'} fill-current`} />
+            <Heart className={`h-8 w-8 ${darkMode ? 'text-beige' : 'text-green-500'} fill-current`} />
             <div>
               <h1 className={`${darkMode ? 'text-white' : 'text-black'}`}>E-SHIME</h1>
               <p className={`text-xs ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Healing through Expression</p>
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             {isAuthenticated ? (
               <>
@@ -77,7 +75,7 @@ export function Navbar({ darkMode, toggleDarkMode,  isAdmin }: NavbarProps) {
                   Login
                 </Link>
                 <Link to="/register">
-                  <Button size="sm" className={darkMode ? 'bg-beige text-black hover:bg-beige/90' : 'bg-black text-white hover:bg-black/90'}>
+                  <Button size="sm">
                     Sign Up
                   </Button>
                 </Link>

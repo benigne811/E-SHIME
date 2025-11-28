@@ -87,7 +87,7 @@ export function PeerStories({ darkMode }: PeerStoriesProps) {
 
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-[#F5F5DC]'} transition-colors duration-300 pb-20`}>
+    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-purple-50'} transition-colors duration-300 pb-20`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
         {/* Header */}
@@ -100,10 +100,9 @@ export function PeerStories({ darkMode }: PeerStoriesProps) {
               </p>
             </div>
 
-            {/* Share Story Dialog */}
             <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
-                <Button className={darkMode ? 'bg-beige text-black hover:bg-beige/90' : 'bg-black text-white hover:bg-black/90'}>
+                <Button>
                   <Share2 className="h-4 w-4 mr-2" />
                   Share Your Story
                 </Button>

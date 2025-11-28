@@ -119,7 +119,7 @@ function ActivityDialog({
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button className={darkMode ? 'bg-beige text-black' : 'bg-black text-white'}>
+        <Button>
           <Share2 className="h-4 w-4 mr-2" /> + Add {type.charAt(0).toUpperCase() + type.slice(1)}
         </Button>
       </DialogTrigger>
@@ -250,7 +250,7 @@ export function CreativeTherapy({ darkMode }: CreativeTherapyProps) {
 
   /* UI Rendering (unchanged, just kept clean) */
   return (
-    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-[#F5F5DC]'} transition-colors duration-300 pb-20`}>
+    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-purple-50'} transition-colors duration-300 pb-20`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
         {/* Header */}

@@ -12,16 +12,13 @@ export function CrisisButton({ darkMode }: CrisisButtonProps) {
 
   return (
     <>
-      {/* Fixed Crisis Help Button */}
       <motion.button
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-6 right-6 z-50 ${
-          darkMode ? 'bg-gray-700' : 'bg-gray-800'
-        } text-white p-4 rounded-full shadow-lg flex items-center gap-2`}
+        className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg flex items-center gap-2"
       >
         <AlertCircle className="h-6 w-6" />
         <span className="hidden sm:inline">Crisis Help</span>
@@ -64,7 +61,7 @@ export function CrisisButton({ darkMode }: CrisisButtonProps) {
               </div>
 
               <div className="space-y-4">
-                <div className={`p-4 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-[#F5F5DC]'}`}>
+                <div className={`p-4 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-blue-50'}`}>
                   <div className="flex items-center gap-3 mb-2">
                     <Phone className={`h-5 w-5 ${darkMode ? 'text-white' : 'text-black'}`} />
                     <h4 className={darkMode ? 'text-white' : 'text-black'}>Emergency Hotline</h4>

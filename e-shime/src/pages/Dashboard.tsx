@@ -89,7 +89,7 @@ export function Dashboard({ darkMode }: DashboardProps) {
   ];
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-[#F5F5DC]'} transition-colors duration-300 pb-20`}>
+    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-purple-50'} transition-colors duration-300 pb-20`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <motion.div
@@ -113,10 +113,10 @@ export function Dashboard({ darkMode }: DashboardProps) {
           className={`${darkMode ? 'bg-gradient-to-r from-gray-800 to-gray-700' : 'bg-gradient-to-r from-white to-gray-50'} rounded-2xl p-6 mb-8 shadow-lg border ${darkMode ? 'border-gray-700' : 'border-gray-200'}`}
         >
           <div className="flex items-start gap-4">
-            <Heart className={`h-8 w-8 ${darkMode ? 'text-beige' : 'text-black'} flex-shrink-0 mt-1`} />
+            <Heart className={`h-8 w-8 ${darkMode ? 'text-beige' : 'text-green-500'} flex-shrink-0 mt-1`} />
             <div>
               <p className={`${darkMode ? 'text-gray-300' : 'text-gray-700'} italic mb-2`}>
-                "{quote}"
+                {quote}
               </p>
               <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
                 Your daily affirmation

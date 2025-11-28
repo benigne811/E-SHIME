@@ -79,7 +79,7 @@ export function TherapistBooking({ darkMode }: TherapistBookingProps) {
   };
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-[#F5F5DC]'} transition-colors duration-300 pb-20`}>
+    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-purple-50'} transition-colors duration-300 pb-20`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <motion.div
@@ -225,7 +225,7 @@ export function TherapistBooking({ darkMode }: TherapistBookingProps) {
                                 selectedTime === slot
                                   ? darkMode
                                     ? 'bg-beige text-black'
-                                    : 'bg-black text-white'
+                                    : 'bg-green-500 text-white'
                                   : darkMode
                                   ? 'bg-gray-700 hover:bg-gray-600 text-white'
                                   : 'bg-gray-100 hover:bg-gray-200 text-black'
@@ -243,7 +243,7 @@ export function TherapistBooking({ darkMode }: TherapistBookingProps) {
                     <Button
                       onClick={handleBooking}
                       disabled={!selectedDate || !selectedTime}
-                      className={`w-full ${darkMode ? 'bg-beige text-black hover:bg-beige/90' : 'bg-black text-white hover:bg-black/90'}`}
+                      className="w-full"
                     >
                       Confirm Booking
                     </Button>

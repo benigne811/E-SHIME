@@ -18,7 +18,7 @@ export function LoadingScreen() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-[#F5F5DC] flex flex-col items-center justify-center z-50"
+      className="fixed inset-0 bg-purple-50 flex flex-col items-center justify-center z-50"
     >
       <motion.div
         animate={{
@@ -31,13 +31,13 @@ export function LoadingScreen() {
           ease: "easeInOut",
         }}
       >
-        <Heart className="h-16 w-16 text-black fill-current" />
+        <Heart className="h-16 w-16 text-green-500 fill-current" />
       </motion.div>
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
-        className="text-black mt-8 text-center"
+        className="text-gray-800 mt-8 text-center"
       >
         E-SHIME
       </motion.h2>
@@ -47,7 +47,7 @@ export function LoadingScreen() {
         transition={{ delay: 0.5 }}
         className="text-gray-600 mt-2 text-center italic max-w-md px-4"
       >
-        "{randomQuote}"
+        {randomQuote}
       </motion.p>
       <motion.div
         className="flex gap-2 mt-8"
@@ -56,17 +56,17 @@ export function LoadingScreen() {
         transition={{ delay: 0.7 }}
       >
         <motion.div
-          className="w-2 h-2 bg-black rounded-full"
+          className="w-2 h-2 bg-green-500 rounded-full"
           animate={{ scale: [1, 1.5, 1] }}
           transition={{ duration: 1, repeat: Infinity, delay: 0 }}
         />
         <motion.div
-          className="w-2 h-2 bg-black rounded-full"
+          className="w-2 h-2 bg-green-500 rounded-full"
           animate={{ scale: [1, 1.5, 1] }}
           transition={{ duration: 1, repeat: Infinity, delay: 0.2 }}
         />
         <motion.div
-          className="w-2 h-2 bg-black rounded-full"
+          className="w-2 h-2 bg-green-500 rounded-full"
           animate={{ scale: [1, 1.5, 1] }}
           transition={{ duration: 1, repeat: Infinity, delay: 0.4 }}
         />

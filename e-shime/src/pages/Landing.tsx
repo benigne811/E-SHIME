@@ -44,8 +44,7 @@ export function Landing({ darkMode }: LandingProps) {
   ];
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-[#F5F5DC]'} transition-colors duration-300`}>
-      {/* Hero Section */}
+    <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-purple-50'} transition-colors duration-300`}>
       <section className="relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -55,7 +54,7 @@ export function Landing({ darkMode }: LandingProps) {
               transition={{ duration: 0.8 }}
             >
               <div className="flex items-center gap-3 mb-6">
-                <Heart className={`h-12 w-12 ${darkMode ? 'text-beige' : 'text-black'} fill-current`} />
+                <Heart className={`h-12 w-12 ${darkMode ? 'text-beige' : 'text-green-500'} fill-current`} />
                 <div>
                   <h1 className={`${darkMode ? 'text-white' : 'text-black'}`}>E-SHIME</h1>
                   <p className={`${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Healing through Expression</p>
@@ -73,7 +72,7 @@ export function Landing({ darkMode }: LandingProps) {
               
               <div className="flex flex-wrap gap-4">
                 <Link to="/register">
-                  <Button size="lg" className={darkMode ? 'bg-beige text-black hover:bg-beige/90' : 'bg-black text-white hover:bg-black/90'}>
+                  <Button size="lg">
                     Get Started
                   </Button>
                 </Link>
@@ -177,7 +176,7 @@ export function Landing({ darkMode }: LandingProps) {
               Join thousands of African youth who are taking control of their mental wellbeing.
             </p>
             <Link to="/register">
-              <Button size="lg" className={darkMode ? 'bg-beige text-black hover:bg-beige/90' : 'bg-black text-white hover:bg-black/90'}>
+              <Button size="lg">
                 Join E-SHIME Today
               </Button>
             </Link>
@@ -186,7 +185,7 @@ export function Landing({ darkMode }: LandingProps) {
       </section>
 
       {/* Footer */}
-      <footer className={`py-8 ${darkMode ? 'bg-gray-900 border-t border-gray-800' : 'bg-[#F5F5DC] border-t border-gray-200'}`}>
+      <footer className={`py-8 ${darkMode ? 'bg-gray-900 border-t border-gray-800' : 'bg-purple-50 border-t border-gray-200'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
             © 2025 E-SHIME. All rights reserved. | Promoting mental wellbeing in African communities.

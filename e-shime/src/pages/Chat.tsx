@@ -232,7 +232,7 @@ export function Chat({ darkMode }: ChatProps) {
             message.sender === 'user'
               ? darkMode
                 ? 'bg-beige text-black'
-                : 'bg-black text-white'
+                : 'bg-blue-500 text-white'
               : darkMode
               ? 'bg-gray-700 text-white'
               : 'bg-gray-200 text-black'
@@ -260,7 +260,7 @@ export function Chat({ darkMode }: ChatProps) {
   return (
     <div
       className={`min-h-screen ${
-        darkMode ? 'bg-gray-900' : 'bg-[#F5F5DC]'
+        darkMode ? 'bg-gray-900' : 'bg-purple-50'
       } transition-colors duration-300 pb-20`}
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -339,11 +339,6 @@ export function Chat({ darkMode }: ChatProps) {
                       <Button
                         onClick={handleSendMessage}
                         disabled={newMessage.trim() === ''}
-                        className={
-                          darkMode
-                            ? 'bg-beige text-black hover:bg-beige/90'
-                            : 'bg-black text-white hover:bg-black/90'
-                        }
                       >
                         <Send className="h-4 w-4" />
                       </Button>
@@ -385,11 +380,6 @@ export function Chat({ darkMode }: ChatProps) {
                       <Button
                         onClick={handleSendMessage}
                         disabled={newMessage.trim() === ''}
-                        className={
-                          darkMode
-                            ? 'bg-beige text-black hover:bg-beige/90'
-                            : 'bg-black text-white hover:bg-black/90'
-                        }
                       >
                         <Send className="h-4 w-4" />
                       </Button>

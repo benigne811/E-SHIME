@@ -22,7 +22,6 @@ export function Login({ darkMode }: LoginProps) {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const navigate = useNavigate();
 
-  // ✅ validate email + password before sending
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
 
@@ -51,7 +50,6 @@ export function Login({ darkMode }: LoginProps) {
     }
   };
 
-  // ✅ call backend API
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!validateForm()) return;
@@ -92,7 +90,7 @@ export function Login({ darkMode }: LoginProps) {
   return (
     <div
       className={`min-h-screen ${
-        darkMode ? "bg-gray-900" : "bg-[#F5F5DC]"
+        darkMode ? "bg-gray-900" : "bg-purple-50"
       } flex items-center justify-center px-4 py-12 transition-colors duration-300`}
     >
       <motion.div
@@ -107,7 +105,7 @@ export function Login({ darkMode }: LoginProps) {
         <div className="flex justify-center mb-6">
           <div className="flex items-center gap-2">
             <Heart
-              className={`h-10 w-10 ${darkMode ? "text-beige" : "text-black"} fill-current`}
+              className={`h-10 w-10 ${darkMode ? "text-beige" : "text-green-500"} fill-current`}
             />
             <div>
               <h2 className={`${darkMode ? "text-white" : "text-black"}`}>E-SHIME</h2>
@@ -184,7 +182,7 @@ export function Login({ darkMode }: LoginProps) {
           <Button
             type="submit"
             disabled={isLoading}
-            className={`w-full ${darkMode ? "bg-beige text-black hover:bg-beige/90" : "bg-black text-white hover:bg-black/90"}`}
+            className="w-full"
           >
             {isLoading ? "Logging in..." : "Login"}
           </Button>

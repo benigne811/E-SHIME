@@ -116,7 +116,7 @@ export function MoodTracking({ darkMode }: MoodTrackingProps) {
   return (
     <div
       className={`min-h-screen ${
-        darkMode ? 'bg-gray-900' : 'bg-[#F5F5DC]'
+        darkMode ? 'bg-gray-900' : 'bg-purple-50'
       } transition-colors duration-300 pb-20`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -149,7 +149,7 @@ export function MoodTracking({ darkMode }: MoodTrackingProps) {
               <div className="flex items-center gap-2 mb-6">
                 <Calendar
                   className={`h-6 w-6 ${
-                    darkMode ? 'text-beige' : 'text-black'
+                    darkMode ? 'text-beige' : 'text-green-500'
                   }`}
                 />
                 <h2 className={darkMode ? 'text-white' : 'text-black'}>
@@ -248,11 +248,7 @@ export function MoodTracking({ darkMode }: MoodTrackingProps) {
                   <Button
                     onClick={handleSubmit}
                     disabled={selectedMood === null}
-                    className={`w-full ${
-                      darkMode
-                        ? 'bg-beige text-black hover:bg-beige/90'
-                        : 'bg-black text-white hover:bg-black/90'
-                    }`}
+                    className="w-full"
                   >
                     Log Mood
                   </Button>
